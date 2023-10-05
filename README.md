@@ -1,2 +1,3 @@
 # AlgoMonsterJava
-AlgoMonster code challenges in Java
+[AlgoMonster](https://algo.monster/) code challenges in Java
+
