@@ -16,10 +16,10 @@ class FindMinimumInRotatedSortedArray {
         while (left <= right) {
             int middle = left + (right-left)/2;
             if(arr.get(middle) <= arr.get(arr.size()-1)){
-                right = right - 1;
+                right = middle - 1;
                 boundaryIndex = middle;
             }else {
-                left = left + 1;
+                left = middle + 1;
             }
         }
         return boundaryIndex;
