@@ -24,8 +24,10 @@ class Newspapers {
         int minAmountOfTime = -1;
         // Time Complexity: O(N)
         while(low <= high){
-            // The mid calculation is different from the others because we are looking for time in sequential order: 25(high) + 15(low) = 40/2 = 20
-            int mid = (high + low)/2;
+            // The mid calculation like the following can lead to overflow if the int values are really high
+            // int mid = (high + low)/2;
+            // It is safer to calculate the mid like this:
+            int mid = low + (high - low) / 2;
             // Time Complexity: O(log(m)), m = sum(newspapers_read_times)
             if (feasible(newspapersReadTimes, numCoworkers, mid)) {
                 minAmountOfTime = mid;
