@@ -25,7 +25,7 @@ import java.util.function.Function;
  * Space Complexity
  * If we count stack memory as space usage, then our space complexity is O(h) where h is the height of the tree because in the worst case we have a line graph where nodes p and q are at the end, which leads to O(n) stack memory.
  */
-class LowestCommonAncestor {
+class LowestCommonAncestorBST {
     public static class Node<T> {
         public T val;
         public Node<T> left;
