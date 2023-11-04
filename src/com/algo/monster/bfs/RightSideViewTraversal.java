@@ -5,15 +5,13 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Given a binary tree, find the depth of the shallowest leaf node.
+ * Given a binary tree, return the rightmost node of each level.
+ *
+ * It should be noted that at each level there can only be at most one rightmost node.
  *
  * Time Complexity: O(n)
  *
  * We traverse every edge and node once but since the number of edges is n - 1, then this simply becomes O(n).
- *
- * Space Complexity: O(n)
- *
- * There are at most O(n) nodes in the queue.
  */
 class RightSideViewTraversal {
     public static class Node<T> {
