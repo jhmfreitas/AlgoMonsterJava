@@ -19,9 +19,8 @@ import java.util.*;
  */
 class OpenTheLock {
     public static int numSteps(String targetCombo, List<String> trappedCombos) {
-        int count = 0;
         if (targetCombo.equals("0000")) {
-            return count;
+            return 0;
         }
         ArrayDeque<String> queue = new ArrayDeque<>();
         HashMap<String, Integer> steps = new HashMap<>();
