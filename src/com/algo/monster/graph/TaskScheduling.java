@@ -32,7 +32,8 @@ class TaskScheduling {
         return inDegrees;
     }
 
-    public static List<String> taskScheduling(List<String> tasks, List<List<String>> requirements) {HashMap<String, List<String>> graph = new HashMap<>();
+    public static List<String> taskScheduling(List<String> tasks, List<List<String>> requirements) {
+        HashMap<String, List<String>> graph = new HashMap<>();
         for (String task : tasks) {
             graph.put(task, new ArrayList<>());
         }
